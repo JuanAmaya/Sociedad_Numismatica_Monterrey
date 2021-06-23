@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--color-menu: #800000;
+	--color-enfocado: #980000;
+	--color-enfocado-2: #b10000;
+	--linea: rgba(0, 0, 0, .2);
+	--letra-menu: white;
+}
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* CREACION DEL MENU */
+
+.menu-bar {
+	background: var(--color-menu);
+	text-align: center;
+}
+
+.menu-bar ul {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	color: var(--letra-menu);
+}
+
+.menu-bar ul li {
+	cursor: pointer;
+	padding: 1em;
+	font-size: 1em;
+}
+
+.menu-bar ul li:hover {
+	background: var(--color-enfocado);
+}
+
+.menu-bar ul li a {
+	text-decoration: none;
+	color: var(--letra-menu);
+}
+
+.menu-bar ul li {
+	transition: .3s ease;
+}
+
+/* DESPLEGAR EL MENU */
+
+.sub-menu {
+	display: none;
+	border-radius: 0 0 10px 10px;
+}
+
+.sub-menu ul {
+	border-radius: 0 0 5px 5px;
+}
+
+.menu-bar ul li:hover .sub-menu {
+	display: block;
+	position: absolute;
+	background: var(--color-enfocado);
+	margin-top: 1em;
+	margin-left: -1em;
+}
+
+.menu-bar ul li:hover .sub-menu ul {
+	display: block;
+	background: var(--color-enfocado-2);
+}
+
+.menu-bar ul li:hover .sub-menu ul li {
+	border-bottom: 1px solid var(--linea);
+	text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu ul li:last-child {
+	border-bottom: none;
+	border-radius: 0 0 5px 5px;
+}
+
+@media screen and (max-width: 991px) {
+	/* MENU HAMBURGESA */
+	/* ANIMACION 
+	.icon.close .top {
+		transform:rotate(45deg);
+		top:48%;
+	}
+	.icon.close .middle, .icon.close .bottom {
+		transform:rotate(-45deg);
+		top:48%;
+	} */
+
+	.menu-bar {
+		display: none;
+	}
+}
