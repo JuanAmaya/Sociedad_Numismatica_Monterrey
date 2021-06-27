@@ -26,7 +26,6 @@ body {
 }
 
 /* HEADER */
-
 .inicio {
 	display: flex;
 	justify-content: center;
@@ -38,7 +37,6 @@ body {
 }
 
 /* NAVBAR */
-
 .menu-bar {
 	background: var(--navegador);
 }
@@ -55,7 +53,6 @@ header {
 	text-decoration: none;
 	display: block;
 	font-size: 1.1rem;
-	/* padding: 0 1.5rem; */
 	transition: .3s ease;
 }
 
@@ -116,7 +113,6 @@ ul {
 }
 
 /* Hamburgesa */
-
 .burger {
 	display: none;
 	cursor: pointer;
@@ -179,12 +175,9 @@ ul {
 	.sub-menu ul {
 		position: initial;
 		background: none;
-		/* margin-left: 3rem; */
-		/* max-height: 0; */
 		width: fit-content;
 		max-width: 100%;
 		background-color: none;
-		/* overflow-y: scroll; */
 	}
 
 	.sub-menu ul li {
