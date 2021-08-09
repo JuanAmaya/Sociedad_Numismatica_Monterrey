@@ -273,6 +273,8 @@ main .seccion .escudo .tarjetas-escudo {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 main .seccion .escudo .tarjetas-escudo p {
@@ -283,7 +285,7 @@ main .seccion .escudo .tarjetas-escudo p {
   width: 100%;
   border-radius: 0 0 10px 10px;
   position: absolute;
-  bottom: 0;
+  bottom: -.5rem;
 }
 
 main .seccion .escudo .tarjetas-escudo .fusion {
