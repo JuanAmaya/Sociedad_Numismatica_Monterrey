@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 12px;
+  scroll-behavior: smooth;
+}
+
+/* GRID */
+/* HEADER */
+header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+header .inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .inicio .logo img {
+  width: 6rem;
+  border-radius: 10px;
+}
+
+header .inicio h1 {
+  display: none;
+}
+
+header .menu-bar {
+  background: #4a4e46;
+}
+
+header .menu-bar nav .nav-links {
+  display: none;
+  list-style: none;
+  margin: auto;
+}
+
+header .menu-bar nav .nav-links a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+header .menu-bar nav .nav-links li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  padding: 1rem;
+}
+
+header .menu-bar nav .nav-links li:hover {
+  background: #3f433c;
+}
+
+header .menu-bar nav .nav-links li .sub-menu li {
+  opacity: 1;
+}
+
+header .menu-bar nav .nav-links li .sub-menu ul {
+  display: none;
+  width: 100%;
+}
+
+header .menu-bar nav .nav-links li .sub-menu ul li {
+  list-style: none;
+  margin-left: 2rem;
+  border-left: 2px solid #191919;
+  width: 100%;
+  padding: 1rem;
+}
+
+header .menu-bar nav .nav-links li .sub-menu ul li a {
+  display: block;
+}
+
+header .menu-bar nav .nav-links li .sub-menu ul li:hover {
+  background: #4a4e46;
+}
+
+header .menu-bar nav .nav-links .efecto .nav-hijo .sub-menu ul {
+  display: block;
+}
+
+header .menu-bar nav .nav-links .activado .sub-menu ul {
+  display: block;
+  margin-top: 2rem;
+  margin-left: -2rem;
+}
+
+header .menu-bar nav .nav-links.nav-active {
+  display: block;
+}
+
+/* MAIN */
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .seccion {
+  padding: 0 1rem;
+  max-width: 950px;
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+}
+
+main .seccion hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 3rem;
+}
+
+main .seccion h2 {
+  color: #4a4e46;
+  font-size: 3rem;
+  margin-bottom: .5rem;
+}
+
+main .seccion h3 {
+  font-size: 2rem;
+  margin-bottom: .2rem;
+}
+
+main .seccion h3 hr {
+  width: 50px;
+  border-top: 3px solid #4a4e46;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+main .seccion p {
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-bottom: .5rem;
+}
+
+main .seccion p span {
+  font-weight: 700;
+}
+
+main .seccion .lista {
+  margin-left: .5rem;
+  padding-left: 1rem;
+  border-left: 3px solid #4a4e46;
+}
+
+main .seccion .convenciones {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(170px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  justify-items: center;
+  grid-gap: 1rem;
+}
+
+main .seccion .convenciones .conve {
+  width: 150px;
+  height: 300px;
+  background: #4a4e46;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main .seccion .convenciones .conve img {
+  width: 150px;
+  height: 230px;
+}
+
+main .seccion .convenciones .conve p {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.btn-arriba {
+  position: fixed;
+  background: #454545;
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  opacity: .8;
+  text-decoration: none;
+  text-align: center;
+  line-height: 45px;
+  font-size: 25px;
+  border-style: none;
+}
+
+/* Hamburgesa */
+.burger {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  cursor: pointer;
+  z-index: 1500;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: .5rem;
+  border-radius: 10px;
+}
+
+.burger div {
+  background-color: #191919;
+  border-radius: 10px;
+  width: 35px;
+  height: 3px;
+  margin: 5px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/* TRANSFORMACION de la hamburgesa */
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 5px);
+          transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -5px);
+          transform: rotate(45deg) translate(-6px, -5px);
+}
+
+/* ANIMACION */
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes btnFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: .8;
+  }
+}
+
+@keyframes btnFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: .8;
+  }
+}
+
+@-webkit-keyframes btnFadeAlReves {
+  from {
+    opacity: .8;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes btnFadeAlReves {
+  from {
+    opacity: .8;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  header .inicio .logo img {
+    width: 7rem;
+  }
+  header .inicio h1 {
+    display: block;
+    font-family: 'Benne', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 2rem;
+  }
+  header .menu-bar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  header .menu-bar nav .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 auto;
+    max-width: 117rem;
+  }
+  header .menu-bar nav .nav-links li {
+    opacity: 1;
+    border-bottom: none;
+  }
+  header .menu-bar nav .nav-links li .sub-menu ul {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: 20rem;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+  }
+  header .menu-bar nav .nav-links li .sub-menu ul li {
+    opacity: 1;
+    margin-left: 0;
+    border: none;
+    border-left-color: none;
+    width: 100%;
+  }
+  header .menu-bar nav .nav-links li .sub-menu ul li:hover {
+    background: #4a4e46;
+  }
+  header .menu-bar nav .nav-links li:hover .sub-menu ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  header .menu-bar nav .nav-links li:hover .sub-menu ul li:last-child {
+    border-radius: 0 0 5px 5px;
+  }
+  header .menu-bar nav .nav-links li:hover .sub-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #3f433c;
+    margin-top: 1rem;
+    margin-left: -1rem;
+  }
+  header .menu-bar nav .nav-links .efecto {
+    position: relative;
+  }
+  header .menu-bar nav .nav-links .efecto .nav-hijo .sub-menu ul {
+    display: none;
+  }
+  header .menu-bar nav .nav-links.nav-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .burger {
+    display: none;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

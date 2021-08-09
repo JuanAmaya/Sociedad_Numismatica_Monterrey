@@ -1,0 +1,94 @@
+@media screen and (min-width: 840px) {
+	header {
+		// BANNER
+		.inicio {
+			.logo img {
+				width: 7rem;
+			}
+
+			h1 {
+				display: block;
+				font-family: 'Benne', sans-serif;
+				font-size: 2.5rem;
+				font-weight: 700;
+				text-align: center;
+				margin-left: 2rem;
+				// text-shadow: 0px 4px 4px $letra-sombra;
+			}
+		}
+
+		// NAVBAR
+
+		.menu-bar {
+			position: sticky;
+			top: 0;
+
+			nav {
+				.nav-links {
+					@include flexCenter();
+					cursor: pointer;
+					flex-direction: row;
+					margin: 0 auto;
+					max-width: 117rem;
+
+					li {
+						opacity: 1;
+						border-bottom: none;
+
+						.sub-menu {
+							ul {
+								width: max-content;
+								max-width: 20rem;
+								position: absolute;
+								flex-direction: column;
+								border-radius: 0 0 5px 5px;
+								cursor: pointer;
+
+								li {
+									opacity: 1;
+									margin-left: 0;
+									border: none;
+									border-left-color: none;
+									width: 100%;
+
+									&:hover {
+										background: $principal;
+									}
+								}
+							}
+						}
+
+						&:hover .sub-menu ul li {
+							border-bottom: 1px solid $separador;
+						}
+
+						&:hover .sub-menu ul li:last-child {
+							border-radius: 0 0 5px 5px;
+						}
+
+						&:hover .sub-menu ul {
+							display: flex;
+							background: $navegador-enfocado;
+							margin-top: 1rem;
+							margin-left: -1rem;
+						}
+					}
+
+					.efecto {
+						position: relative;
+						.nav-hijo .sub-menu ul {
+							display: none;
+						}
+					}
+
+					&.nav-active {
+						display: flex;
+					}
+				}
+			}
+		}
+	}
+	.burger {
+		display: none;
+	}
+}
