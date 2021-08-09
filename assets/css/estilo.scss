@@ -175,6 +175,15 @@ main {
 			}
 		}
 
+		.logo-pagina {
+			display: flex;
+			justify-content: center;
+
+			img {
+				width: 8rem;
+			}
+		}
+
 		.lista {
 			margin-left: .5rem;
 			padding-left: 1rem;
@@ -199,9 +208,108 @@ main {
 				}
 
 				p {
-					color: white;
+					color: $letra-carta;
 					font-size: 3rem;
 					text-align: center;
+				}
+			}
+		}
+
+		.tarjeta-contacto {
+			background: $principal;
+			border-radius: 10px;
+			color: $letra-nav;
+			padding: 1rem;
+			margin-bottom: 2rem;
+
+			h4 {
+				font-size: 2rem;
+			}
+
+			.union-contacto {
+				display: flex;
+				align-items: center;
+
+				p {
+					font-size: 1.3rem;
+					margin-left: 1rem;
+				}
+
+				.icono-contacto {
+					width: 50px;
+					height: 50px;
+				}
+			}
+		}
+
+		// Imagenes del escudo
+		.escudo {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			justify-items: center;
+			grid-gap: 1rem;
+
+			.tarjetas-escudo {
+				border-radius: 10px;
+				width: 250px;
+				height: 260px;
+				background: $principal;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				position: relative;
+
+				p {
+					color: $letra-carta;
+					font-size: 3rem;
+					text-align: center;
+					background: $fondo-carta;
+					width: 100%;
+					border-radius: 0 0 10px 10px;
+					position: absolute;
+					bottom: 0;
+				}
+
+				.fusion {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					grid-template-rows: 1fr .5fr;
+					grid-template-areas: "cerro cerro" "obispado moneda";
+					justify-items: center;
+					align-items: center;
+					grid-gap: 1rem;
+					position: absolute;
+					top: 1rem;
+
+					img {
+						border-radius: 10px;
+						object-fit: cover;
+						width: 100px;
+						height: 80px;
+					}
+
+					.cerro {
+						width: 220px;
+						height: 90px;
+						grid-area: cerro;
+					}
+
+					.obispado {
+						grid-area: obispado;
+					}
+
+					.moneda {
+						grid-area: moneda;
+					}
+				}
+
+				.logo-pagina {
+					position: absolute;
+
+					img {
+						border-radius: 10px;
+					}
 				}
 			}
 		}

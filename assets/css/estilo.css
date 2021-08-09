@@ -167,6 +167,19 @@ main .seccion p span {
   font-weight: 700;
 }
 
+main .seccion .logo-pagina {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .seccion .logo-pagina img {
+  width: 8rem;
+}
+
 main .seccion .lista {
   margin-left: .5rem;
   padding-left: 1rem;
@@ -199,6 +212,132 @@ main .seccion .convenciones .conve p {
   color: white;
   font-size: 3rem;
   text-align: center;
+}
+
+main .seccion .tarjeta-contacto {
+  background: #4a4e46;
+  border-radius: 10px;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+main .seccion .tarjeta-contacto h4 {
+  font-size: 2rem;
+}
+
+main .seccion .tarjeta-contacto .union-contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .seccion .tarjeta-contacto .union-contacto p {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+
+main .seccion .tarjeta-contacto .union-contacto .icono-contacto {
+  width: 50px;
+  height: 50px;
+}
+
+main .seccion .escudo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  grid-gap: 1rem;
+}
+
+main .seccion .escudo .tarjetas-escudo {
+  border-radius: 10px;
+  width: 250px;
+  height: 260px;
+  background: #4a4e46;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+main .seccion .escudo .tarjetas-escudo p {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  background: #474a43;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+main .seccion .escudo .tarjetas-escudo .fusion {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr .5fr;
+      grid-template-rows: 1fr .5fr;
+      grid-template-areas: "cerro cerro" "obispado moneda";
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 1rem;
+  position: absolute;
+  top: 1rem;
+}
+
+main .seccion .escudo .tarjetas-escudo .fusion img {
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100px;
+  height: 80px;
+}
+
+main .seccion .escudo .tarjetas-escudo .fusion .cerro {
+  width: 220px;
+  height: 90px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: cerro;
+}
+
+main .seccion .escudo .tarjetas-escudo .fusion .obispado {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: obispado;
+}
+
+main .seccion .escudo .tarjetas-escudo .fusion .moneda {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: moneda;
+}
+
+main .seccion .escudo .tarjetas-escudo .logo-pagina {
+  position: absolute;
+}
+
+main .seccion .escudo .tarjetas-escudo .logo-pagina img {
+  border-radius: 10px;
 }
 
 .btn-arriba {
