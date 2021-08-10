@@ -279,6 +279,7 @@ main .seccion .escudo .tarjetas-escudo {
 }
 
 main .seccion .escudo .tarjetas-escudo p {
+  position: absolute;
   color: white;
   font-size: 3rem;
   text-align: center;
@@ -333,10 +334,6 @@ main .seccion .escudo .tarjetas-escudo .fusion .moneda {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: moneda;
-}
-
-main .seccion .escudo .tarjetas-escudo .logo-pagina {
-  position: absolute;
 }
 
 main .seccion .escudo .tarjetas-escudo .logo-pagina img {
