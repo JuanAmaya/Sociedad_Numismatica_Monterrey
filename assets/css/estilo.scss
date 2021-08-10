@@ -22,14 +22,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-/* GRID */
-// body {
-// 	display: grid;
-// 	height: 100vh;
-// 	grid-template-rows: .3fr 1fr;
-// 	grid-template-areas: "header" "main";
-// }
-
 /* HEADER */
 header {
 	width: 100%;
@@ -201,8 +193,10 @@ main {
 				height: 300px;
 				background: $principal;
 				box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 10px;
 
 				img {
+					border-radius: 10px 10px 0 0;
 					width: 150px;
 					height: 230px;
 				}
@@ -309,6 +303,7 @@ main {
 					position: absolute;
 
 					img {
+						width: 9rem;
 						border-radius: 10px;
 					}
 				}

@@ -13,7 +13,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* GRID */
 /* HEADER */
 header {
   width: 100%;
@@ -201,9 +200,11 @@ main .seccion .convenciones .conve {
   background: #4a4e46;
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
 
 main .seccion .convenciones .conve img {
+  border-radius: 10px 10px 0 0;
   width: 150px;
   height: 230px;
 }
@@ -339,6 +340,7 @@ main .seccion .escudo .tarjetas-escudo .logo-pagina {
 }
 
 main .seccion .escudo .tarjetas-escudo .logo-pagina img {
+  width: 9rem;
   border-radius: 10px;
 }
 
