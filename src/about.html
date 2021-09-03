@@ -15,7 +15,7 @@
 
     <title>Sociedad Numismática de Monterrey A.C.</title>
 </head>
-<body>
+<body onload="tablaPresidentes()">
     <header>
         <div class="banner"></div>
 
@@ -24,8 +24,9 @@
                 <img src="../assets/imagenes/logo.png" alt="Escudo">
             </a>
             <h1 class="nombre">
-                Sociedad Numismática 
-                <br>de Monterrey A.C.
+                <span class="sociedad">Sociedad</span> 
+                <br><span class="numismatica">Numismática</span> 
+                <br><span class="monterrey">de Monterrey A.C.</span>
             </h1>
         </div>
 
@@ -40,10 +41,9 @@
                     </a>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="#">Mensaje del presidente</a></li>
-                                <li><a href="#">Descripción de la sociedad</a></li>
-                                <li><a href="#">Objetivos</a></li>
-                                <li><a href="#">Beneficio de ser socio</a></li>
+                                <li><a href="somos.html">Mensaje del presidente</a></li>
+                                <li><a href="somos.html#descripcion">Descripción de la sociedad</a></li>
+                                <li><a href="somos.html#beneficio">Beneficio de ser socio</a></li>
                             </ul>
                         </div>
                     </li>
@@ -75,6 +75,7 @@
                                 <li><a href="gazette.html">Gaceta Numismática para lectura</a></li>
                                 <li><a href="gazette.html">Gaceta Numismática descargable</a></li>
                                 <li><a href="gazette.html">Base de datos de todas las gacetas de la SNM</a></li>
+                                <li><a href="gazette.html#normas">Normas de publicación</a></li>
                             </ul>
                         </div>
                     </li>
@@ -123,29 +124,122 @@
                 Nuestra Historia
             </h2>
             <p>
-                En la mañana del 27 de Abril de 1970, José María Santos Menchaca, llego al mercado Juárez (icono de la 
-                cultura regiomontana de Monterrey), y dirigió sus pasos al puesto de Bartolomé Garza y Garza, en donde además de 
-                refrescos, se vendían medallas antiguas. Su sorpresa fue agradable al encontrar ahí a un viejo amigo, Pedro Martínez 
-                Torres, que después de los saludos de rigor, le dejo saber que cultivaba la misma afición hacia la Numismática, “Que 
-                te parece Pedro si juntamos a los que tienen la misma afición y formamos una sociedad que nos permita conocer más, 
-                intercambiar ideas y piezas”, “Magnifico, llámame unos de estos días y redondeamos la idea…”, “No, si lo dejamos para 
-                después, nunca de hace”.
+                En la mañana del 27 de Abril de 1970, José María Santos Menchaca, llego al mercado Juárez (icono de la cultura 
+                regiomontana de Monterrey), y dirigió sus pasos al puesto de Bartolomé Garza y Garza, en donde además de refrescos, 
+                se vendían medallas antiguas. Su sorpresa fue agradable al encontrar ahí a un viejo amigo, Pedro Martínez Torres, que 
+                después de los saludos de rigor, le dejo saber que cultivaba la misma afición hacia la Numismática, “Que te parece Pedro 
+                si juntamos a los que tienen la misma afición y formamos una sociedad que nos permita conocer más, intercambiar ideas y 
+                piezas”, “Magnifico, llámame unos de estos días y redondeamos la idea…”, “No, si lo dejamos para después, nunca de 
+                hace”.
             </p>
             <p>
                 De ahí se fueron a casa de pedro a redactar una circular que enviaron a cuanta persona conocían con esta afición, 
                 citándolos para la primera reunión. No solo enviaron la circular, si no que personalmente visitaron a cada una de las 
-                personas que pudieran estar interesadas.
+                personas que pudieran estar interesadas. Cabe señalar que en esa circular decía que al crearse el Centro Numismático 
+                Nuevoleonés A.C. serína considerado miembros fundadores.
             </p>
             <p>
-                El 4 de Mayo fue la primera reunión en el club Alemán en donde se acordó iniciar la formación del grupo que se 
-                llamaría “Sociedad Numismática de Monterrey A.C.”, de ahí siguieron otras reuniones en Mayo 8, Junio 2 y 15 y Julio 
-                1º, en donde se definían, revisaban y corregían los estatutos que hoy norman la vida de nuestra sociedad, paralelo a 
-                eso, el número de integrantes se incrementaba.
+                El 4 de Mayo fue la primera reunión en el Club Alemán situado en la Avenida Hidalgo No. 462, al Poniente, en donde se 
+                acordó iniciar la formación del grupo que se llamaría “Sociedad Numismática de Monterrey A.C.”, de ahí siguieron otras 
+                reuniones en Mayo 8, Junio 2 y 15 y Julio 1º, en donde se definían, revisaban y corregían los estatutos que hoy norman 
+                la vida de nuestra sociedad, paralelo a eso, el número de integrantes se incrementaba.
             </p>
             <p>
                 Finalmente, el 15 de Octubre de 1970, ante la fe del notario público, se firmó el acta constitutiva que dio nacimiento 
                 a la Sociedad Numismática de Monterrey A.C.
             </p>
+
+            <h3>
+                La primer Medalla de la Sociedad
+                <hr>
+            </h3>
+            <p>
+                La primera medalla de la Sociedad Numismática de Monterrey se realizó en el año de 1971, y es conmemorativa al 375 
+                Aniversario de la Fundación de la Ciudad Metropolitana de Nuestra Señora de Monterrey.
+            </p>
+            <div class="fotos-historia">
+                <img src="../assets/imagenes/historia/primera_moneda_anversa.png" alt="Primera Moneda Anversa">
+                <img src="../assets/imagenes/historia/primera_moneda_reverso.png" alt="Primera Moneda Reverso">
+            </div>
+            <div class="lista">
+                <p>
+                    <span>Anverso:</span> Escudo de la Ciudad de Monterrey, concedido por la Reina Gobernadora doña Mariana de Austria en 1672
+                </p>
+                <p>
+                    <span>Leyenda:</span> 375 ANIVERSARIO DE LA FUNDACIÓN DE MONTERREY – 20 DE SEPTIEMBRE- MDXCVI- MCMVXX1
+                </p>
+                <p>
+                    <span>Reverso:</span> Efigie de Don Diego de Montemayor—el Viejo-. 
+                </p>
+                <p>
+                    <span>Leyenda:</span> DIEGO DE MONTEMAYOR- FUNDADOR Y CAPITAN GENERAL
+                </p>
+                <p>
+                    <span>CECA:</span> Mo de la Casa de Moneda de México.
+                </p>
+                <p>
+                    <span>Diámetro:</span> Con hojas de laurel, usado en las monedas columnarias acuñadas en México entre 1732 y 1772.
+                </p>
+                <p>
+                    <span>Diámetro:</span> 35 milímetros.
+                </p>
+                <p>
+                    <span>Emisión:</span> En oro, 41.666 grms. - Ley 0.900- 30 piezas; en plata, 24 grms. - Ley 0.900- 2,500 piezas
+                </p>
+                <p>
+                    <span>Diseño:</span> Profesor Alfonso Reyes Aurrecoechea.
+                </p>
+            </div>
+            
+            <h3>
+                El primer libro
+                <hr>
+            </h3>
+            <p>
+                En la Asamblea del 6 de noviembre de 1978 se presentó la solicitud para que la Sociedad financiera una edición de mil 
+                ejemplares del libro “LAS MONEDAS MUNICIPALES MEXICANAS” de Mauricio Fernández Garza, aprobándose dicha solicitud. El 
+                12 de Julio de 1979 en el Museo de Monterrey se presentó el libro, el cual enriquece la bibliografía numismática Nacional.
+            </p>
+            <div class="fotos-historia">
+                <img src="../assets/imagenes/historia/primer_libro.png" alt="Primer Libro">
+            </div>
+
+            <h3>
+                La primer Gaceta Numismática
+                <hr>
+            </h3>
+            <p>
+                La Gaceta Numismática de la Sociedad Numismática de Monterrey nace con su primera publicación en el mes de febrero de 
+                1979. Gaceta tipo revista tamaño medio oficio, con veintiocho páginas fue impresa en mimeógrafo electrónico en sus 
+                primero seis tomos.
+            </p>
+            <div class="fotos-historia">
+                <img src="../assets/imagenes/historia/primera_gaceta.png" alt="Primera Gaceta Numismatica">
+            </div>
+
+            <h3>
+                Presidentes
+                <hr>
+            </h3>
+            <p>
+                Les rendimos una mención especial a quienes han dedicado su tiempo y liderazgo bajo el cargo de presiente de la Sociedad 
+                Numismática de Monterrey.
+            </p>
+
+            <div class="tabla-centrada">
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>AÑO</th>
+                            <th>PRESIDENTE</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tabla-cuerpo">
+
+                    </tbody>
+                </table>
+            </div>
+
             <hr>
         </section>
 
