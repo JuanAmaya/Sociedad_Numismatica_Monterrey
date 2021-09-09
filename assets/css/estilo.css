@@ -273,6 +273,21 @@ main .seccion .subrayado {
   font-weight: normal;
 }
 
+main .seccion .portada-gaceta {
+  border-radius: 10px;
+  width: 250px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+main .seccion .portada-gaceta:hover {
+  width: 270px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
 main .seccion .tabla-centrada {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,6 +434,16 @@ main .seccion .escudo .tarjetas-escudo .fusion .moneda {
 main .seccion .escudo .tarjetas-escudo .logo-pagina img {
   width: 9rem;
   border-radius: 10px;
+}
+
+main .archivo-pdf {
+  width: 100%;
+  height: 100vh;
+}
+
+main .archivo-pdf iframe {
+  width: 100%;
+  height: 100vh;
 }
 
 main .centrar-contacto {
