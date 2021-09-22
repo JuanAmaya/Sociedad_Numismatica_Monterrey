@@ -172,7 +172,7 @@ function cambioImagenes() {
   let images = document.getElementsByClassName("imagen-principal");
   console.log(images);
   const nextImageDelay = 3000;
-  let currentImageCounter = 0;
+  let currentImageCounter = 1;
 
   images[currentImageCounter].style.opacity = 1;
 
