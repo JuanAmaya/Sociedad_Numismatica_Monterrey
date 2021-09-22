@@ -142,31 +142,6 @@ function tablaPresidentes() {
   incluirPresidente("M.A. GABRIEL ADRIAN GONZALEZ AYALA", "");
 }
 
-/* Tabla de libros */
-function tablaLibros() {
-  // libros = document.getElementsByClassName("tabla-cuerpo")[0];
-  // function incluirLibros(fecha, libro) {
-  //   const tr = document.createElement("tr");
-  //   const th1 = document.createElement("th");
-  //   const th2 = document.createElement("th");
-  //   th1.append(fecha);
-  //   tr.appendChild(th1);
-  //   th2.append(libro);
-  //   tr.appendChild(th2);
-  //   libros.appendChild(tr);
-  // }
-  // incluirLibros(
-  //   1973,
-  //   "Conoce México a través de sus monedas. Colaboración entre la Sociedad Numismática de Monterrey y la empresa KODYZ " +
-  //     "(1973)"
-  // );
-  // incluirLibros(
-  //   1978,
-  //   "José Eleuterio González. Perfil Biográfico. Aureliano Tapia Méndez" +
-  //     "(1978)"
-  // );
-}
-
 /* Cambiar Imagenes del Index */
 function cambioImagenes() {
   let images = document.getElementsByClassName("imagen-principal");
