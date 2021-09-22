@@ -303,15 +303,15 @@ main {
         box-shadow: $formato-sombra;
 
         thead {
-          tr {
+          .tabla-titulo {
             background-color: $principal;
+          }
+
+          tr {
+            background-color: $navegador-enfocado;
             color: $letra-nav;
             text-align: center;
             font-weight: bold;
-
-            &:nth-of-type(odd) {
-              background-color: $navegador-enfocado;
-            }
           }
         }
 

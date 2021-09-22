@@ -334,15 +334,15 @@ main .seccion .tabla-centrada .content-table {
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 }
 
-main .seccion .tabla-centrada .content-table thead tr {
+main .seccion .tabla-centrada .content-table thead .tabla-titulo {
   background-color: #0e3b7b;
+}
+
+main .seccion .tabla-centrada .content-table thead tr {
+  background-color: #334e76;
   color: white;
   text-align: center;
   font-weight: bold;
-}
-
-main .seccion .tabla-centrada .content-table thead tr:nth-of-type(odd) {
-  background-color: #334e76;
 }
 
 main .seccion .tabla-centrada .content-table th,
