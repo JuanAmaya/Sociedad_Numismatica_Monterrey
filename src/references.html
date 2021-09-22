@@ -15,10 +15,10 @@
 
     <!-- JS -->
     <script type="text/javascript" src="../assets/js/script.js" async></script>
-
+    <script src="https://unkpg.com/read-excel-file@4.x/bundle.read-excel-file.min.js"></script>
     <title>Sociedad Numismática de Monterrey A.C.</title>
   </head>
-  <body>
+  <body onload="tablaLibros()">
     <header>
       <div class="banner"></div>
 
@@ -175,35 +175,30 @@
     </header>
 
     <main>
-      <section class="seccion centrar-contacto">
-        <h2>Contacto</h2>
-        <div class="contactos">
-          <div class="contacto">
-            <div class="icono-contacto">
-              <i class="fas fa-envelope fa-4x"></i>
-            </div>
-            <div class="union-contacto">
-              <h4>Correo Electrónico</h4>
-              <p>sonumtyac@gmail.com</p>
-            </div>
-          </div>
-          <br />
-          <div class="contacto">
-            <div class="icono-contacto">
-              <i class="fab fa-facebook-f fa-4x"></i>
-            </div>
-            <div class="union-contacto">
-              <h4>Facebook</h4>
-              <a href="https://www.facebook.com/SonumtyAC" target="_blank">
-                <p>Sociedad Numismática de Monterrey A.C.</p>
-              </a>
-            </div>
-          </div>
+      <section class="seccion">
+        <h2>Referencias Bibliográficas</h2>
+        <p>
+          Compartir nuestros conocimientos es un acto de generosidad y valentía,
+          nos dice muchas cosas positivas de quines lo hacen.
+        </p>
+        <p>
+          A continuación encontrarán un listado de libros relacionados a la
+          numismática que fueron escritos (o con colabroación) por Socios de la
+          Sociedad Numismática de Monterrey.
+        </p>
+
+        <div class="tabla-centrada">
+          <table class="content-table">
+            <thead>
+              <tr>
+                <th>Año</th>
+                <th>Libro</th>
+              </tr>
+            </thead>
+            <tbody class="tabla-cuerpo"></tbody>
+          </table>
         </div>
       </section>
     </main>
-
-    <!-- Boton para volver al top -->
-    <a href="#" class="btn-arriba"><i class="fas fa-angle-up"></i></a>
   </body>
 </html>
