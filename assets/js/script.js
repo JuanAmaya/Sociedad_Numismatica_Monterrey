@@ -137,7 +137,7 @@ function tablaPresidentes() {
   incluirPresidente("DR. CARLOS ABEL AMAYA GUERRA", "");
   incluirPresidente("ING. ROBERTO ARMANDO DE LA FUENTE GUERRA", "");
   incluirPresidente("LIC. MARTIN A. VEGA HERNANDEZ", "");
-  incluirPresidente("DR. JESUS SALVADRO ARTEAGA GARZA", "");
+  incluirPresidente("DR. JESUS SALVADOR ARTEAGA GARZA", "");
   incluirPresidente("LIC. JOSE G. GARZA MORALES", "");
   incluirPresidente("M.A. GABRIEL ADRIAN GONZALEZ AYALA", "");
 }

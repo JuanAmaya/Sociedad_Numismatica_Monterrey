@@ -160,7 +160,7 @@ main {
     h2 {
       color: $principal;
       font-size: 3rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
     }
 
     h3 {
@@ -179,7 +179,7 @@ main {
     p {
       font-size: 1.1rem;
       text-align: justify;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
 
       span {
         font-weight: 700;
@@ -199,6 +199,10 @@ main {
       margin-left: 0.5rem;
       padding-left: 1rem;
       border-left: 3px solid $principal;
+
+      p {
+        margin-bottom: 1.2rem;
+      }
     }
 
     .fotos-historia {
@@ -222,23 +226,34 @@ main {
       justify-items: center;
       grid-gap: 1rem;
 
-      .sesion {
-        background: $principal;
-        width: 280px;
-        height: 202px;
-        background: $principal;
-        box-shadow: $formato-sombra;
-        border-radius: 10px;
+      a {
+        text-decoration: none;
+        transition: 0.5s;
 
-        p {
-          color: $letra-carta;
-          font-size: 2.2rem;
-          text-align: center;
+        .sesion {
+          background: $principal;
+          width: 280px;
+          height: 192px;
+          background: $principal;
+          box-shadow: $formato-sombra;
+          border-radius: 10px;
+          margin-bottom: 1.3rem;
+
+          p {
+            color: $letra-carta;
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 0.2rem;
+          }
+
+          img {
+            width: 280px;
+            border-radius: 0 0 10px 10px;
+          }
         }
 
-        img {
-          width: 280px;
-          border-radius: 0 0 10px 10px;
+        &:hover {
+          transform: scale(1.1);
         }
       }
     }
@@ -276,13 +291,13 @@ main {
     }
 
     .portada-gaceta {
-      border-radius: 10px;
+      border-radius: 5px;
       width: 250px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-      transition: 0.5s ease;
+      transition: 0.5s;
 
       &:hover {
-        width: 270px;
+        transform: scale(1.05);
         box-shadow: $formato-sombra;
       }
     }
@@ -369,6 +384,7 @@ main {
           border-radius: 0 0 10px 10px;
           position: absolute;
           bottom: -0.5rem;
+          margin-bottom: 0;
         }
 
         .fusion {

@@ -168,7 +168,7 @@ main .seccion hr {
 main .seccion h2 {
   color: #0e3b7b;
   font-size: 3rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 main .seccion h3 {
@@ -187,7 +187,7 @@ main .seccion h3 hr {
 main .seccion p {
   font-size: 1.1rem;
   text-align: justify;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 main .seccion p span {
@@ -211,6 +211,10 @@ main .seccion .lista {
   margin-left: 0.5rem;
   padding-left: 1rem;
   border-left: 3px solid #0e3b7b;
+}
+
+main .seccion .lista p {
+  margin-bottom: 1.2rem;
 }
 
 main .seccion .fotos-historia {
@@ -242,25 +246,38 @@ main .seccion .sesiones {
   grid-gap: 1rem;
 }
 
-main .seccion .sesiones .sesion {
+main .seccion .sesiones a {
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .seccion .sesiones a .sesion {
   background: #0e3b7b;
   width: 280px;
-  height: 202px;
+  height: 192px;
   background: #0e3b7b;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+  margin-bottom: 1.3rem;
 }
 
-main .seccion .sesiones .sesion p {
+main .seccion .sesiones a .sesion p {
   color: white;
   font-size: 2.2rem;
   text-align: center;
+  margin-bottom: 0.2rem;
 }
 
-main .seccion .sesiones .sesion img {
+main .seccion .sesiones a .sesion img {
   width: 280px;
   border-radius: 0 0 10px 10px;
+}
+
+main .seccion .sesiones a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 main .seccion .convenciones {
@@ -299,16 +316,17 @@ main .seccion .subrayado {
 }
 
 main .seccion .portada-gaceta {
-  border-radius: 10px;
+  border-radius: 5px;
   width: 250px;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 main .seccion .portada-gaceta:hover {
-  width: 270px;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 }
@@ -408,6 +426,7 @@ main .seccion .escudo .tarjetas-escudo p {
   border-radius: 0 0 10px 10px;
   position: absolute;
   bottom: -0.5rem;
+  margin-bottom: 0;
 }
 
 main .seccion .escudo .tarjetas-escudo .fusion {

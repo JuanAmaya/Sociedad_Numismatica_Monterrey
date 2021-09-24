@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- HOJA CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/estilo.css" />
+    <link rel="stylesheet" href="../assets/css/lightbox.min.css" />
 
     <!-- Iconos Ion -->
     <link
@@ -15,6 +16,10 @@
 
     <!-- JS -->
     <script type="text/javascript" src="../assets/js/script.js" async></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/lightbox-plus-jquery.min.js"
+    ></script>
 
     <title>Sociedad Numismática de Monterrey A.C.</title>
   </head>
@@ -118,20 +123,18 @@
             </li>
             <li class="efecto">
               <a href="#"
-                >Convención Númismatica
+                >Eventos
                 <i class="fas fa-angle-down"></i>
               </a>
               <div class="sub-menu">
                 <ul>
                   <li>
-                    <a href="events.html#evento"
-                      >Invitación e información de la convención</a
-                    >
+                    <a href="events.html#evento">Sesiones Ordinarias </a>
                   </li>
                   <li>
                     <a href="events.html#convencion"
-                      >Historia o fotografía de convenciones anteriores</a
-                    >
+                      >Convenciones numismáticas
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -145,9 +148,9 @@
                 <ul>
                   <li>
                     <a href="references.html"
-                      >Listado y breve descripción de publicaciones numismáticas
-                      de los socios de la sociedad</a
-                    >
+                      >Listado de libros de numismática publicados por nuestros
+                      socios.
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -190,75 +193,126 @@
         </p>
         <br />
         <div class="sesiones">
-          <div class="sesion">
-            <p>Enero 2021</p>
-            <img
-              src="../assets/imagenes/eventos/evento_enero.png"
-              alt="Sesion Enero 2021"
-            />
-          </div>
-          <div class="sesion">
-            <p>Febrero 2021</p>
-            <img
-              src="../assets/imagenes/eventos/evento_febrero.png"
-              alt="Sesion Febrero 2021"
-            />
-          </div>
-          <div class="sesion">
-            <p>Marzo 2021</p>
-            <img
-              src="../assets/imagenes/eventos/evento_marzo.png"
-              alt="Sesion Marzo 2021"
-            />
-          </div>
-          <div class="sesion">
-            <p>Abril 2021</p>
-            <img
-              loading="lazy"
-              src="../assets/imagenes/eventos/evento_abril.png"
-              alt="Sesion Abril 2021"
-            />
-          </div>
-          <div class="sesion">
-            <p>Mayo 2021</p>
-            <img
-              loading="lazy"
-              src="../assets/imagenes/eventos/evento_mayo.png"
-              alt="Sesion Mayo 2021"
-            />
-          </div>
-          <div class="sesion">
-            <p>Junio 2021</p>
-            <img
-              loading="lazy"
-              src="../assets/imagenes/eventos/evento_junio.png"
-              alt="Sesion Junio 2021"
-            />
-          </div>
-          <div class="sesion">
-            <p>Julio 2021</p>
-            <img
-              loading="lazy"
-              src="../assets/imagenes/eventos/evento_julio.png"
-              alt="Sesion Julio 2021"
-            />
-          </div>
-          <div class="sesion">
-            <p>Agosto 2021</p>
-            <img
-              loading="lazy"
-              src="../assets/imagenes/eventos/evento_agosto.png"
-              alt="Sesion Agosto 2021"
-            />
-          </div>
-          <div class="sesion">
-            <p>Septiembre 2021</p>
-            <img
-              loading="lazy"
-              src="../assets/imagenes/eventos/evento_septiembre.png"
-              alt="Sesion Septiembre 2021"
-            />
-          </div>
+          <a
+            href="../assets/imagenes/eventos/evento_enero.png"
+            data-lightbox="mygallery"
+          >
+            <div class="sesion">
+              <p>Enero 2021</p>
+              <img
+                src="../assets/imagenes/eventos/evento_enero.png"
+                alt="Sesion Enero 2021"
+              /></div
+          ></a>
+
+          <a
+            href="../assets/imagenes/eventos/evento_febrero.png"
+            data-lightbox="mygallery"
+          >
+            <div class="sesion">
+              <p>Febrero 2021</p>
+              <img
+                src="../assets/imagenes/eventos/evento_febrero.png"
+                alt="Sesion Febrero 2021"
+              /></div
+          ></a>
+
+          <a
+            href="../assets/imagenes/eventos/evento_marzo.png"
+            data-lightbox="mygallery"
+          >
+            <div class="sesion">
+              <p>Marzo 2021</p>
+              <img
+                src="../assets/imagenes/eventos/evento_marzo.png"
+                alt="Sesion Marzo 2021"
+              />
+            </div>
+          </a>
+
+          <a
+            href="../assets/imagenes/eventos/evento_abril.png"
+            data-lightbox="mygallery"
+          >
+            <div class="sesion">
+              <p>Abril 2021</p>
+              <img
+                loading="lazy"
+                src="../assets/imagenes/eventos/evento_abril.png"
+                alt="Sesion Abril 2021"
+              />
+            </div>
+          </a>
+
+          <a
+            href="../assets/imagenes/eventos/evento_mayo.png"
+            data-lightbox="mygallery"
+          >
+            <div class="sesion">
+              <p>Mayo 2021</p>
+              <img
+                loading="lazy"
+                src="../assets/imagenes/eventos/evento_mayo.png"
+                alt="Sesion Mayo 2021"
+              />
+            </div>
+          </a>
+
+          <a
+            href="../assets/imagenes/eventos/evento_junio.png"
+            data-lightbox="mygallery"
+          >
+            <div class="sesion">
+              <p>Junio 2021</p>
+              <img
+                loading="lazy"
+                src="../assets/imagenes/eventos/evento_junio.png"
+                alt="Sesion Junio 2021"
+              />
+            </div>
+          </a>
+
+          <a
+            href="../assets/imagenes/eventos/evento_julio.png"
+            data-lightbox="mygallery"
+          >
+            <div class="sesion">
+              <p>Julio 2021</p>
+              <img
+                loading="lazy"
+                src="../assets/imagenes/eventos/evento_julio.png"
+                alt="Sesion Julio 2021"
+              />
+            </div>
+          </a>
+
+          <a
+            href="../assets/imagenes/eventos/evento_agosto.png"
+            data-lightbox="mygallery"
+          >
+            <div class="sesion">
+              <p>Agosto 2021</p>
+              <img
+                loading="lazy"
+                src="../assets/imagenes/eventos/evento_agosto.png"
+                alt="Sesion Agosto 2021"
+              />
+            </div>
+          </a>
+
+          <a
+            href="../assets/imagenes/eventos/evento_septiembre.png"
+            data-lightbox="mygallery"
+          >
+            <div class="sesion">
+              <p>Septiembre 2021</p>
+              <img
+                loading="lazy"
+                src="../assets/imagenes/eventos/evento_septiembre.png"
+                alt="Sesion Septiembre 2021"
+              />
+            </div>
+          </a>
         </div>
 
         <hr />
@@ -312,6 +366,7 @@
         </div>
       </section>
     </main>
+    <br /><br /><br /><br /><br /><br />
 
     <!-- Boton para volver al top -->
     <a href="#" class="btn-arriba"><i class="fas fa-angle-up"></i></a>
